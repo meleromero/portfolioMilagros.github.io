@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milagros Romero</title>
+
+    <script src="https://kit.fontawesome.com/4cb1450a50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                            <li><a href="#about">SOBRE MI</a></li>
+                            <li><a href="#skills">CONOCIMIENTOS</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                            
+                        </ul>
+                    </nav>
+
+                    <!--icono menu-->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                        
+                    </div>
+
+                    <!--iconos redes-->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/milagros-ail%C3%A9n-romero-285604210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/milimilagros.romero/" target="_blank"><i class="fa-brands fa-facebook"></i></a>   
+                        <a href="https://www.instagram.com/milagrosrrromero/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="hola">¡Hola!</p>
+                <h2>Soy <span>Milagros Romero</span>, estudiante de Desarrollo Web</h2>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!--sobre mi-->
+    <section id="about">
+        <div class="contenedor-foto">
+            <img src="/imgs/imgcv.png" alt="">
+        </div>
+        <div class="about">
+            <p>Tengo 23 años y vivo en Córdoba capital. Estudio
+                Traductorado de Inglés en la Facultad de Lenguas de la UNC y también 
+                he cursado Argentina Programa para formarme en programación.
+                No solo he aprendido con este curso sino que también soy autodidacta
+                e intento avanzar en desarrollo web por mi cuenta.</p>
+                <a href="/curriculum (1).pdf" download="curriculum">Descargar CV</a>
+        </div>
+    </section>
+    
+
+    <!--habilidades-->
+    <section id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML</p>
+                <span class="porcentaje">65%</span>
+                <div class="barra">
+                    <div id="html" class="barra-progreso1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>CSS</p>
+                <span class="porcentaje">65%</span>
+                <div class="barra">
+                    <div id="css" class="barra-progreso2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">70%</span>
+                <div class="barra">
+                    <div id="js" class="barra-progreso3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Inglés</p>
+                <span class="porcentaje">80%</span>
+                <div class="barra">
+                    <div id="eng" class="barra-progreso4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">¡Contactame!</h3>
+        <div class="contenedor-form">
+        <form action="">
+            <div class="fila mitad">
+                <input type="text" placeholder="Nombre y apellido" class="input-mitad">
+                <input type="text" placeholder="E-mail">
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Asunto" class="input-full">
+            </div>
+            <div class="fila">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="input-full">
+                </textarea>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </div>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

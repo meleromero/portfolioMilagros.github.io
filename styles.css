@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    background: linear-gradient(rgba(73, 17, 163, 0.7), rgba(26, 8, 109, 0.7)), url("/imgs/imgfondo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#inicio .contenido header{
+    background-color: rgba(3, 1, 12, 0.7);
+    position: fixed;
+    width: 100%;
+    
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: rgba(168, 151, 228, 0.89);
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: rgba(168, 151, 228, 0.89);
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .hola{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .hola h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+    font-size: 25px;
+    color: rgb(155, 133, 235);
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion h2 span:hover{
+    color: #fff;
+}
+
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#icono-nav{
+    color: #fff;
+    display: none;
+
+}
+
+/* about */
+#about{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: rgba(26, 8, 109, 0.7);
+    display: flex;
+}
+
+#about .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#about .contenedor-foto .img{
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #fff;
+
+}
+
+#about .about{
+    margin: 0 40px;
+
+}
+
+#about .about p{
+    color: black;
+    display: flex;
+    
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+#about .about a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#about .about a:hover{
+    background-color: rgba(26, 8, 109, 0.7);
+    color: #fff;
+}
+
+/*habilidades*/
+
+#skills{
+    background: rgba(84, 58, 179, 0.89);
+    padding: 100px 0;
+    text-align: center;
+}
+
+#skills .skill{
+    max-width: 600px;
+    margin: 30px auto;
+    
+
+}
+
+
+
+#skills .skill .info{
+    display: grid;
+    grid-column: 2;
+    font-weight: bolder;
+    
+    
+}
+
+#skills .skill .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+#skills .skill .barra{
+    background-color: rgba(73, 17, 163, 0.7);
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+    
+
+}
+
+/*hacer con java*/
+#skills .skill .barra .barra-progreso1{
+    background-color: #fff;
+    width: 65%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+
+
+#skills .skill .barra .barra-progreso2{
+    background-color: #fff;
+    width: 65%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+
+#skills .skill .barra .barra-progreso3{
+    background-color: #fff;
+    width: 70%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+
+#skills .skill .barra .barra-progreso4{
+    background-color: #fff;
+    width: 80%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+
+/*empieza animacion*/
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes progreso3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes progreso4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+/*termina*/
+
+
+/* contacto */
+#contacto{
+    padding: 100px 15px;
+
+}
+
+#contacto .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    
+    
+    
+}
+
+#contacto .contenedor-form{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+#contacto .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid rgba(168, 151, 228, 0.89);
+}
+
+#contacto .contenedor-form .mitad input{
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#contacto .btn-enviar:hover{
+    background-color: rgba(26, 8, 109, 0.7);
+    color: #fff;
+}
+
